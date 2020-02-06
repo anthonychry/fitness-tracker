@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Fitness Tracker</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/add.css">
 </head>
 <body>
-    <form action="/api/add-exercise" method="post">
-    <input name="exercise-type" id="exercise-type">Exercise Type</input>
-    <input id="exercise-name">Exercise Name</input>
-    <input id="weight">Weight</input>
-    <input id="sets">Sets</input>
-    <input id="reps">Reps</input>
-    <input id="duration">Duration</input>
-    <button type="submit">Complete</button>
-    <a href="/add"><button>Add Another</button></a>
-    </form>
+    <h2>Fitness Tracker</h2>
+    <div class="container">
+        <div class="row"><p>Exercise Type<input name="exercise-type" id="exercise-type" placeholder="type here..."></input></p></div>
+        <div class="row"><p>Exercise Name<input id="exercise-name" placeholder="type here..."></input></p></div>
+        <div class="row"><p>Weight<input id="weight" placeholder="in lbs..."></input></p></div>
+        <div class="row"><p>Sets<input id="sets" placeholder="enter number"></input></p></div>
+        <div class="row"><p>Reps<input id="reps" placeholder="enter number"></input></p></div>
+        <div class="row"><p>Duration<input id="duration" placeholder="in minutes..."></input></p></div>
+        <div class="row"><button id="newExercise" type="button">Complete</button>
+            <a href="/add"><button type="button">Add Another</button></a></div>
+    </div>
+    <script type="text/javascript" src="./js/add.js"></script>
 </body>
 </html>
+
